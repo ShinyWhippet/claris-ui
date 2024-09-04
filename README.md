@@ -1,26 +1,30 @@
-# Styled React UI Library Starter Kit
+# Claris UI for React
 
-## Description
+Claris UI is a React component library that offers a simple set of reusable UI components for building web applications.
 
-This starter kit provides a minimal setup to build a React UI library with TypeScript, Vite, and Tailwind CSS decorated with styled-components.
+## TODOs
 
-## Install pnpm
+### Components
 
-- [Install pnpm](https://pnpm.io/installation):
-   ```sh
-   corepack enable pnpm
-   corepack use pnpm@9.x
-   ```
+- [x] Button
+- [ ] Card
+- [ ] Header
+- [ ] Menu
+- [ ] Dropdown
+- [ ] Modal
 
-- Build the library:
-  ```sh
-  pnpm build
-  ```
-  
-- Build the docs:
-  ```sh
-  pnpm build:docs
-  ```
+### Repo
+
+- [x] husky
+- [x] GitHub Actions
+- [x] semantic-release
+- [x] npm package deployment
+- [ ] Storybook
+- [ ] Docs website
+
+## Contributing
+
+Please follow the [CONTRIBUTING](CONTRIBUTING) guide.
 
 ## License
 
