@@ -1,0 +1,30 @@
+{
+  "name": "@shinywhippet/claris-ui",
+  "sideEffects": false,
+  "version": "1.0.4",
+  "main": "lib/index.js",
+  "module": "lib/es/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShinyWhippet/claris-ui.git"
+  },
+  "author": "github.com/nestorbritez",
+  "license": "MIT",
+  "scripts": {
+    "build": "pnpm run build:esm && pnpm run build:cjs",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "tailwind-styled-components": "2.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

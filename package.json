@@ -1,0 +1,66 @@
+{
+  "name": "@shinywhippet/claris-ui",
+  "version": "1.0.0",
+  "author": "github.com/nestorbritez",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "lint": "eslint . --fix --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "clean": "rimraf package/lib",
+    "build": "pnpm run clean && pnpm run package:esm && pnpm run package:cjs",
+    "build:docs": "tsc -b && vite build",
+    "package:esm": "tsc --project package/tsconfig.esm.json",
+    "package:cjs": "tsc --project package/tsconfig.cjs.json",
+    "prepare": "husky",
+    "semantic-release": "semantic-release",
+    "commit": "git add -A && git commit"
+  },
+  "devDependencies": {
+    "@eslint/compat": "1.1.1",
+    "@eslint/js": "9.8.0",
+    "@semantic-release/commit-analyzer": "13.0.0",
+    "@semantic-release/github": "10.1.7",
+    "@semantic-release/npm": "12.0.1",
+    "@semantic-release/release-notes-generator": "14.0.1",
+    "@types/node": "22.1.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "8.0.1",
+    "@typescript-eslint/parser": "8.0.1",
+    "@vitejs/plugin-react-swc": "3.7.0",
+    "autoprefixer": "10.4.20",
+    "commitizen": "4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "9.8.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.35.0",
+    "eslint-plugin-react-hooks": "5.1.0-rc-187dd6a7-20240806",
+    "eslint-plugin-react-refresh": "0.4.9",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-tailwindcss": "3.17.4",
+    "globals": "15.9.0",
+    "husky": "9.1.5",
+    "postcss": "8.4.41",
+    "rimraf": "6.0.1",
+    "semantic-release": "24.1.0",
+    "tailwind-styled-components": "2.2.0",
+    "tailwindcss": "3.4.7",
+    "typescript": "5.5.4",
+    "typescript-eslint": "8.0.1",
+    "vite": "5.3.5",
+    "vite-plugin-dts": "4.0.3"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "packageManager": "pnpm@9.9.0+sha256.7a4261e50d9a44d9240baf6c9d6e10089dcf0a79d0007f2a26985a6927324177",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

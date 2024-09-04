@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "module": "esnext",
+    "allowUmdGlobalAccess": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "target": "ES6",
+    "baseUrl": "../",
+    "rootDir": "src",
+    "outDir": "lib/es"
+  },
+  "include": ["src"],
+  "exclude": ["src/**/__tests__"]
+}

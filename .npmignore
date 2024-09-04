@@ -1,0 +1,48 @@
+# Ignore documentation files
+docs/
+
+# Ignore node_modules directory (it shouldn't be published)
+node_modules/
+
+# Ignore configuration files
+eslint.config.js
+postcss.config.js
+release.config.mjs
+tailwind.config.ts
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+tsconfig.cjs.json
+tsconfig.esm.json
+vite.config.ts
+
+# Ignore lock files and package manager specific files
+pnpm-lock.yaml
+
+# Ignore any log files
+*.log
+
+# Ignore any coverage or build directories (if they exist)
+coverage/
+build/
+dist/
+
+# Ignore environment files (if you use any)
+.env
+.env.local
+.env.*.local
+
+# Ignore test-related files (if you add them later)
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts
+__tests__/
+__mocks__/
+
+# Ignore IDE and editor-specific files
+.vscode/
+.idea/
+
+# Include the package directory
+!package/
