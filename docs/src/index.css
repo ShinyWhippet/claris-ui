@@ -1,12 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer base {
   :root {
-    --app-bg-color: theme("colors.stone.50");
+    --background: theme("colors.stone.100");
+    --foreground: theme("colors.stone.900");
   }
+
   .dark {
-    --app-bg-color: theme("colors.neutral.800");
+    --background: theme("colors.stone.800");
+    --foreground: theme("colors.stone.100");
+  }
+
+  body {
+    font-family: "PT Sans", sans-serif;
+    background-color: var(--background);
+    color: var(--foreground);
+    @apply transition-colors duration-200;
   }
 }

@@ -1,16 +1,19 @@
 import './App.css'
 
-import { Button } from '@components/ui'
 import { useEffect, useState } from 'react'
 import tw from 'tailwind-styled-components'
 
-const Wrapper = tw.section`
-  m-auto flex min-h-screen max-w-lg flex-col items-center justify-center gap-6
-  text-center`
+import { Buttons } from '@/docs/components/Buttons'
+import { Content, Wrapper } from '@/docs/ui/Structure.tsx'
+import { Button } from '@/package/Button'
 
 const Title = tw.h1`
-  text-5xl font-bold text-stone-900
-  dark:text-stone-100`
+  text-5xl font-bold`
+
+const Subtitle = tw(Title)`
+  text-2xl`
+
+const Section = tw.section`grid gap-4`
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false)
@@ -23,13 +26,16 @@ function App() {
 
   return (
     <Wrapper>
-      <Title>Claris UI</Title>
-      <Button
-        onClick={toggleDarkMode}
-        aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
-      >
-        {isDarkMode ? 'Igor Dark' : 'Claris Light'}
-      </Button>
+      <Content>
+        <Title>Claris UI</Title>
+        <Button $intent="neutro" onClick={toggleDarkMode}>
+          {isDarkMode ? 'Dark' : 'Light'}
+        </Button>
+      </Content>
+      <Section>
+        <Subtitle>Buttons</Subtitle>
+        <Buttons />
+      </Section>
     </Wrapper>
   )
 }

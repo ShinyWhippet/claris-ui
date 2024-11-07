@@ -20,7 +20,7 @@ export default tseslint.config(
     settings: {
       tailwindcss: {
         // These are the default values but feel free to customize
-        callees: ['classnames', 'clsx', 'ctl'],
+        callees: ['classnames', 'clsx', 'ctl', 'cx'],
         config: 'tailwind.config.js', // returned from `loadConfig()` utility if not provided
         cssFiles: [
           '**/*.css',
@@ -33,7 +33,7 @@ export default tseslint.config(
         removeDuplicates: true,
         skipClassAttribute: false,
         whitelist: [],
-        tags: ['tw'], // can be set to e.g. ['tw'] for use in tw`bg-blue`
+        tags: ['tw', 'cx'], // can be set to e.g. ['tw'] for use in tw`bg-blue`
         classRegex: '^class(Name)?$', // can be modified to support custom attributes. E.g. "^tw$" for `twin.macro`
       },
     },

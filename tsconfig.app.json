@@ -25,7 +25,8 @@
 
     "baseUrl": ".",
     "paths": {
-      "@components/ui": ["package/src/index.ts"]
+      "@/package/*": ["package/src/*"],
+      "@/docs/*": ["docs/src/*"]
     }
   },
   "include": ["docs/src", "package/src"]

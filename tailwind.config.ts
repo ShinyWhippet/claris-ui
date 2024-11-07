@@ -1,10 +1,15 @@
 import type { Config } from 'tailwindcss'
 
 export default {
-  darkMode: 'selector',
+  darkMode: ['selector'],
   content: ['./docs/index.html', './(docs|package)/src/**/*.{ts,tsx,css}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
+    },
   },
   plugins: [],
 } satisfies Config
